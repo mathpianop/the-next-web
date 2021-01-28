@@ -20,9 +20,13 @@ time, mark, audio, video {
   
 }
 
-.header {
+
+
+
+header {
   position: fixed;
   width: 100%;
+  z-index: 2;
 } 
 
 .nav1 {
@@ -41,14 +45,16 @@ time, mark, audio, video {
 }
 
 .hero-articles {
-  position: relative;
+  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 8px;
   height: 450px;
-  margin: 3px 8px;
+  margin: 0 8px;
+  padding-top: 108px;
 }
+
 
 .main-hero-article {
   background-color: gray;
@@ -68,7 +74,7 @@ time, mark, audio, video {
 }
 
 .section-nav {
-  height: 50px;
+  height: 50px; /* Eventually content-dependant */
   background-color: tomato;
   margin: 10px 0;
 }
@@ -111,7 +117,7 @@ time, mark, audio, video {
 }
 
 .category {
-  height: 600px;
+  height: 600px; /* Eventually content-dependant */
   background-color: greenyellow;
 }
 
@@ -120,7 +126,7 @@ time, mark, audio, video {
 }
 
 .deal {
-  height: 200px;
+  height: 200px; /* Eventually content-dependant */
   background-color: hotpink;
 }
 
@@ -128,4 +134,5 @@ footer {
   height: 250px;
   background-color: black;
 }
+
 

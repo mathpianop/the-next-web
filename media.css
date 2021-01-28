@@ -1,0 +1,57 @@
+@media all and (max-width: 1024px) {
+
+  .logo-container {
+    float: left;
+  }
+  .logo {
+    height: 80px;
+    width: 120px;
+    background-color: black;
+  }
+
+  .logo-shifter {
+    height: 25px;
+    width: 120px;
+    background-color: #ffd900;
+  }
+
+  .hero-articles {
+    height: 350px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #last-round {
+    display: none;
+  }
+
+  .category-articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 768px) {
+ .hero-articles {
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+ }
+
+ .main-hero-article {
+   grid-column: auto;
+   grid-row: auto;
+ }
+
+ .secondary-hero-article {
+   grid-column: auto;
+ }
+
+ .container {
+   grid-template-columns: 1fr;
+ }
+
+ .category-articles {
+   grid-template-columns: 1fr;
+ }
+}
