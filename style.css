@@ -20,19 +20,40 @@ time, mark, audio, video {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-a {
-  cursor: pointer;
+a {cursor: pointer;}
+
+.section-nav {
+  display: inline-block;
+  height: 40px;
+  margin: 10px 0;
+  line-height: 40px;
+  
 }
 
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  color: tomato;
+
+}
+
+.title span {
+  vertical-align: middle;
+  font-size: 15px;
+}
 
 
 header {
   position: fixed;
   width: 100%;
   z-index: 2;
+  background-color: #fff;
 } 
 
+
+
 .nav1 {
+
   height: 30px;
   background-color: black;
   line-height: 30px;
@@ -41,7 +62,8 @@ header {
 
 .primary-group-links {
   vertical-align: middle;
-  margin-left: 20px;
+  padding-left: 20px;
+  width: 100%;
 }
 
 .nav1 li {
@@ -69,7 +91,6 @@ header {
 
 .secondary-group-links {
   float: right;
-  margin-right: ;
 }
 
 .nav2 {
@@ -82,7 +103,7 @@ header {
 
 .nav2-links {
   vertical-align: middle;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 
 .nav2 li {
@@ -99,14 +120,13 @@ header {
 }
 
 .netherlands span {
-  padding-left: 20px;
+  margin-left: 20px;
   font-weight: 200;
   font-size: 14px;
   vertical-align: middle;
 }
 
 .hero-articles {
-  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -114,22 +134,69 @@ header {
   height: 450px;
   margin: 0 8px;
   padding-top: 108px;
+  color: #fff;
+  font-weight: 200;
 }
 
 
 .main-hero-article {
+  position: relative;
   background-color: gray;
   grid-column: 1 / 3;
   grid-row: span 2;
-  background-image: url("images/wall.jpg");
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.249), #dd76765d 50%, #e72929a5), url("images/pleiades.jpg");
   background-repeat: no-repeat;
   background-size: 1000px;
+  background-position: 50% 50%;
+}
+
+.article-date {
+  float: right;
+  padding: 20px;
+}
+
+.main-logo {
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.article-title-container {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.article-title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.article-info {
+  color: lightgray;
 }
 
 .secondary-hero-article {
+  position: relative;
   grid-column: 3 / 4;
   background-color: gray;
+  background-position: 50% 50%;
+  background-size: 420px;
+  background-repeat: no-repeat;
+  
 }
+
+.secondary-hero-article .article-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+#first-secondary {background-image: url("images/sunset.jpg");}
+
+#second-secondary {background-image: url("images/sunset.jpg");}
 
 .main-sections {
   max-width: 1150px;
@@ -137,11 +204,6 @@ header {
   padding: 20px;
 }
 
-.section-nav {
-  height: 50px; /* Eventually content-dependant */
-  background-color: tomato;
-  margin: 10px 0;
-}
 
 .container {
   display: grid;

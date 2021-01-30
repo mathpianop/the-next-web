@@ -1,22 +1,66 @@
+@media all and (min-width: 1024px) {
+  .logo {
+    display: none;
+  }
+}
+
+
 @media all and (max-width: 1024px) {
 
   .logo-container {
     float: left;
   }
   .logo {
+    display: inline-block;
     height: 80px;
     width: 120px;
     background-color: black;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    
   }
 
-  .logo-shifter {
-    height: 25px;
-    width: 120px;
-    background-color: #ffd900;
+  .nav1, .nav2 {
+    display: inline-block;
+    width: calc(100% - 120px);
+    white-space: nowrap;
   }
+
+  .netherlands span {
+    margin-left: 140px;
+  }
+
 
   .hero-articles {
     height: 350px;
+  }
+
+  .main-hero-article {
+    background-image: url("images/pleiades.jpg");
+  }
+
+
+  .article-date {
+    display: none;
+  }
+
+  .main-logo {
+    display: none;
+  }
+
+  .article-title {
+    font-size: 35px;
+  }
+
+  .secondary-hero-article .article-title {
+    font-size: 20px;
+  }
+
+  .secondary-hero-article .article-info {
+    font-size: 12px;
   }
 
   .container {
@@ -33,9 +77,43 @@
 }
 
 @media all and (max-width: 768px) {
- .hero-articles {
+ 
+ .nav1, .nav2 {
+   display: none;
+ }
+
+ .logo {
+   height: 50px;
+   line-height: 50px;
+ }
+
+ .netherlands {
+   margin-top: 50px;
+   height: 70px;
+   line-height: 70px;
+   text-align: center;
+ }
+
+ .netherlands span {
+  margin: 0;
+ }
+
+ .logo-shifter {
+   height: 0;
+ }
+ 
+  .hero-articles {
    grid-template-columns: 1fr;
    grid-template-rows: auto;
+   height: 450px;
+ }
+
+ .article-title {
+   font-size: 20px;
+ }
+
+ .article-category {
+   font-size: 12px;
  }
 
  .main-hero-article {
@@ -45,7 +123,9 @@
 
  .secondary-hero-article {
    grid-column: auto;
+   background-size: 750px;
  }
+
 
  .container {
    grid-template-columns: 1fr;
@@ -54,4 +134,5 @@
  .category-articles {
    grid-template-columns: 1fr;
  }
+
 }
