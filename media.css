@@ -7,6 +7,12 @@
 
 @media all and (max-width: 1024px) {
 
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Header and Main navbars */
   .logo-container {
     float: left;
   }
@@ -32,6 +38,8 @@
   .netherlands span {
     margin-left: 140px;
   }
+
+  /* Hero section */
 
 
   .hero-articles {
@@ -63,8 +71,8 @@
     font-size: 12px;
   }
 
-  .container {
-    grid-template-columns: 1fr 1fr 1fr;
+  .latest-rounds-links {
+    float: none;
   }
 
   #last-round {
@@ -78,6 +86,12 @@
 
 @media all and (max-width: 768px) {
  
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Header and Main Navbars */
+
  .nav1, .nav2 {
    display: none;
  }
@@ -101,6 +115,8 @@
  .logo-shifter {
    height: 0;
  }
+
+ /* Hero section */
  
   .hero-articles {
    grid-template-columns: 1fr;
@@ -127,9 +143,8 @@
  }
 
 
- .container {
-   grid-template-columns: 1fr;
- }
+ 
+ /* Latest News Articles */
 
  .latest-news-article img {
    float: left;
@@ -144,5 +159,8 @@
  .category-articles {
    grid-template-columns: 1fr;
  }
+
+ /* Latest Round */
+ 
 
 }

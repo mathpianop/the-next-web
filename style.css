@@ -20,10 +20,25 @@ time, mark, audio, video {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-a {cursor: pointer;}
+/* General */
+
+.main-sections {
+  max-width: 1150px;
+  margin: auto;
+  padding: 20px;
+}
+
+a {cursor: pointer}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
 
 .section-nav {
   display: inline-block;
+  width: 100%;
   height: 40px;
   margin: 10px 0;
   line-height: 40px;
@@ -34,13 +49,34 @@ a {cursor: pointer;}
   font-size: 30px;
   font-weight: 700;
   color: tomato;
-
 }
 
 .title span {
   vertical-align: middle;
   font-size: 15px;
 }
+
+.title a:hover {
+  color: #000;
+}
+
+.article-title-container {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.article-title {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.article-info {
+  color: lightgray;
+}
+
+
 
 
 header {
@@ -126,6 +162,8 @@ header {
   vertical-align: middle;
 }
 
+/* Hero section */
+
 .hero-articles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -162,22 +200,6 @@ header {
   margin-left: 30px;
 }
 
-.article-title-container {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-}
-
-.article-title {
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.article-info {
-  color: lightgray;
-}
-
 .secondary-hero-article {
   position: relative;
   grid-column: 3 / 4;
@@ -198,19 +220,7 @@ header {
 
 #second-secondary {background-image: url("images/sunset.jpg");}
 
-.main-sections {
-  max-width: 1150px;
-  margin: auto;
-  padding: 20px;
-}
-
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  
-}
+/* Latest News Articles */
 
 .latest-news {
   margin-bottom: 100px;
@@ -235,16 +245,85 @@ header {
   margin-top: 10px;
 }
 
+/* Latest Rounds */
 
+.latest-rounds-links {
+  float: right;
+  font-size: 16px;
+  font-weight: 200;
+  color: tomato;
+}
+
+.latest-rounds-links a:hover {
+  color: #000;
+}
 
 .latest-rounds .container {
   height: 250px; /* Eventually content-dependant */
 }
 
-.latest-rounds-panel {
-  background-color: turquoise;
+.round-title {
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  background-color: tomato;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
 }
 
+.round-title span {
+  margin-left: 80px;
+}
+.round-header img {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border: none;
+}
+
+.amount-container {
+  background-color: mistyrose;
+}
+
+.round-amount {
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.kind {
+  font-size: 12px;
+  font-weight: 200;
+  color: gray;
+}
+
+.tag {
+  margin-bottom: 8px;
+}
+
+.round-tags {
+  padding: 10px;
+  border-bottom: 1px solid tomato;
+  font-size: 16px;
+  background-color: #fdf6f1;
+  padding: 20px
+}
+
+.round-info {
+  background-color: #fdf6f1;
+  font-weight: 200;
+  padding: 20px;
+}
+
+.round-location {
+  color: gray;
+}
 
 .category-articles {
   display: grid;
@@ -258,9 +337,7 @@ header {
   background-color: greenyellow;
 }
 
-.latest-deals .container {
 
-}
 
 .deal {
   height: 200px; /* Eventually content-dependant */
