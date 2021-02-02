@@ -76,6 +76,13 @@ a {cursor: pointer}
   color: lightgray;
 }
 
+.article-class {
+  font-weight: 200;
+}
+
+
+/* Header/Navs */
+
 
 
 
@@ -258,9 +265,7 @@ header {
   color: #000;
 }
 
-.latest-rounds .container {
-  height: 250px; /* Eventually content-dependant */
-}
+
 
 .round-title {
   display: inline-block;
@@ -332,12 +337,78 @@ header {
   margin-top: 80px;
 }
 
+/* Article Categories */
+
+
 .category {
-  height: 600px; /* Eventually content-dependant */
-  background-color: greenyellow;
+  
+}
+
+.category-popular-article {
+  position: relative;
+  height: 300px;
+  background-image: url("images/pleiades.jpg");
+  background-size: 100%;
+  background-position: 50% 50%;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  color: #fff;
+  overflow: hidden;
 }
 
 
+.popular-article-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.category-latest-article {
+  height: 80px;
+  background-color: #faf4f3;
+  color: tomato;
+}
+
+.category-latest-article img {
+  float: right;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+
+.category-latest-article .article-class {
+  padding: 5px;
+  font-weight: 200;
+}
+
+.latest-article-title {
+  margin-left: 5px;
+  padding-right: 5px;
+}
+
+.category-list-articles {
+ margin-left: 18px;
+ color: tomato;
+}
+
+.category-list-articles li {
+  padding: 8px 0 8px 0;
+  border-bottom: 1px solid lightgray;
+  font-weight: 200;
+}
+
+.category-list-articles li:last-child {
+  border: none;
+}
+
+.category-list-articles a {
+  color: #646363;
+}
+
+.category-list-articles a:hover {
+  color: black;
+}
 
 .deal {
   height: 200px; /* Eventually content-dependant */

@@ -128,7 +128,7 @@
    font-size: 20px;
  }
 
- .article-category {
+ .article-class {
    font-size: 12px;
  }
 
@@ -160,7 +160,9 @@
    grid-template-columns: 1fr;
  }
 
- /* Latest Round */
+ /* Article Categories */
  
-
+.category-popular-article {
+  height: 500px;
+}
 }
