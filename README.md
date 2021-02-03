@@ -1,0 +1,1 @@
+This project is part of The Odin Project Curriculum (theodinproject.com). The purpose is to practice creating a responsive webpage by cloning the homepage of thenextweb.com. Things like icons and ads are ignored or simplified, since the flexible layout is the point.
