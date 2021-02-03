@@ -188,4 +188,19 @@
     font-size: 15px;
   }
 
+  /* Footer */
+
+  .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .copyright-pieces {
+    
+    margin-bottom: 5px;
+  }
+
 }
