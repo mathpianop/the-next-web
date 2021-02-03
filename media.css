@@ -71,13 +71,17 @@
     font-size: 12px;
   }
 
-  .latest-rounds-links {
-    float: none;
+
+/* Latest Rounds */
+  .latest-rounds .section-nav {
+    display: block;
   }
 
   #last-round {
     display: none;
   }
+
+/* Article Categories */
 
   .category-articles {
     grid-template-columns: 1fr 1fr;
@@ -162,7 +166,26 @@
 
  /* Article Categories */
  
-.category-popular-article {
-  height: 500px;
-}
+  .category-popular-article {
+    height: 500px;
+  }
+
+  /* Latest Deals */
+
+  .deal img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+  .original-price {
+    font-size: 12px;
+  }
+
+  .sale-price {
+    font-size: 15px;
+  }
+
 }

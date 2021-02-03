@@ -37,19 +37,24 @@ a {cursor: pointer}
 }
 
 .section-nav {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   width: 100%;
-  height: 40px;
-  margin: 10px 0;
+  
+  margin: 20px 0;
   line-height: 40px;
   
 }
 
 .title {
+  height: 40px;
+  vertical-align: middle;
   font-size: 30px;
   font-weight: 700;
   color: tomato;
 }
+
 
 .title span {
   vertical-align: middle;
@@ -255,7 +260,7 @@ header {
 /* Latest Rounds */
 
 .latest-rounds-links {
-  float: right;
+  height: 40px;
   font-size: 16px;
   font-weight: 200;
   color: tomato;
@@ -340,10 +345,6 @@ header {
 /* Article Categories */
 
 
-.category {
-  
-}
-
 .category-popular-article {
   position: relative;
   height: 300px;
@@ -410,10 +411,40 @@ header {
   color: black;
 }
 
-.deal {
-  height: 200px; /* Eventually content-dependant */
-  background-color: hotpink;
+/* Latest Deals */
+
+.deals-index {
+  font-weight: 200;
+  color: tomato;
 }
+
+.deals-index:hover {
+  color: black;
+}
+
+.deal img {
+  width: 100%;
+}
+
+.deal-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.original-price {
+  font-size: 18px;
+  font-weight: 200;
+  color: #afaeae;
+  text-decoration: line-through;
+}
+
+.sale-price {
+  font-weight: 200;
+  font-size: 20px;
+  color: #6d6b6b;
+}
+
+
 
 footer {
   height: 250px;
